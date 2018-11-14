@@ -1,17 +1,20 @@
 package com.futureGadgeLab.app;
-
-import java.sql.Timestamp;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Parking {
     private int ticketNumber;
     private Date entryTime, exitTime;
-    private float fee;
+    private BigDecimal fee;
+
+    /**
+     * Used to establish attributes within a row in the Parking table
+     */
 
     public Parking() {
     }
 
-    public Parking(int ticketNumber, Date entryTime, Date exitTime, Float fee){
+    public Parking(int ticketNumber, Date entryTime, Date exitTime, BigDecimal fee){
         this.ticketNumber = ticketNumber;
         this.entryTime = entryTime;
         this.exitTime = exitTime;
@@ -39,10 +42,10 @@ public class Parking {
         this.exitTime = exitTime;
     }
 
-    public float getFee(){
+    public BigDecimal getFee(){
         return fee;
     }
-    public void setFee(float fee){
+    public void setFee(BigDecimal fee){
         this.fee = fee;
     }
 

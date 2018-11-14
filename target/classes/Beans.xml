@@ -5,12 +5,13 @@
        xsi:schemaLocatoion="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "parking" class = "com.futureGadgeLab.app.Parking">
-        <constructor-arg index="0" value="16160"/>
-        <constructor-arg index="1" value="1900"/>
-        <constructor-arg index="2" value="1800"/>
-        <constructor-arg index="3" value="10.50"/>
-        <!--<property name = "parking" value = "FGL!"/>-->
-    </bean>
+<bean id = "parking"
+      class = "com.futureGadgeLab.app.Parking">
+    <constructor-arg index="0" value="16160"/>
+    <constructor-arg index="1" value="1900"/>
+    <constructor-arg index="2" value="1800"/>
+    <constructor-arg index="3" value="10.50"/>
+    <!--<property name = "parking" value = "FGL!"/>-->
+</bean>
 </beans>
 

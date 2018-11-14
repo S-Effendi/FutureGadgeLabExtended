@@ -4,4 +4,6 @@ create table Parking (
   ExitTime timestamp,
   Fee float,
   PRIMARY KEY (TicketNumber)
+
+  jdbcTemplate.execute(hsql);
 );

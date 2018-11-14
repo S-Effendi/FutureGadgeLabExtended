@@ -5,6 +5,10 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Sets and instance of a object which will be reused by the rest service
+ */
+
 public class FglApplication  extends Application{
     private Set<Object> s_instance = new HashSet<Object>();
 
